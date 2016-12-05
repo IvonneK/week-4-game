@@ -1,10 +1,34 @@
-	var red = "<img src='assets/images/red.png' id='red' class='crystal1' alt='red'/>";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<!-- link to jQuery Library -->
+  	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<h1 id="gameName">Crystals Collector!</h1>
+	<p class="instructions"></p>
+	<div id="showRandomNum"></div>
+	<div id="totalWinsLosses"></div>
+	<div id="crystalContainer">
+		<p id="aCrystal1"></p>
+	</div>
+	<div id="scoreDiv">Your total score is:</div>
+	<div id="playerTotalDiv"></div>
+
+
+<script type="text/javascript">
+	var red = "<img src='assets/images/red.png' id='red' class='crystal1' alt='red'/>";
 	var blue = "<img src='assets/images/blue.png' id='blue' class='crystal1' alt='blue '/>";
 	var yellow = "<img src='assets/images/yellow.png' id='yellow' class='crystal1' alt='yellow'/>";
 	var green = "<img src='assets/images/green.png' id='green' class='crystal1' alt='green '/>";
-	var colors = ["blue", "red", "yellow", "green"];
-
+	var colors = ["blue", "red", "yellow", "green"]
 	var a;
 	var min;
 	var max;
@@ -64,3 +88,6 @@
 			losses++;
 		};
 	};	
+	</script>
+</body>
+</html>
